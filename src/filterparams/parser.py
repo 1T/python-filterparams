@@ -13,12 +13,12 @@ from .util import to_multidict
 
 
 FILTER_DETECTOR = re.compile(
-    r'^filter\[param\]'
-    r'\[(?P<name>\w+)\]'
+    r'^filter\[(?P<name>\w+)\]'
     r'(?:\[(?P<filter_name>\w+)\]'
     r'(?:\[(?P<alias>\w+)\])?)?$',
     re.IGNORECASE,
 )
+
 ORDER_KEY = 'filter[order]'
 ORDER_PARAM_FILTER = re.compile(
     r'^(?:'
